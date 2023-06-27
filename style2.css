@@ -118,14 +118,15 @@ font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: rgb(88, 88, 88);
     border-radius: 7px;
+    width: 100px;
 }
 .bi-translate:hover{
     background-color: rgb(235, 235, 235);
 }
 .download{
     color:rgb(42, 42, 42) ;
-    margin-left: 530px;
-    width: 100px;
+    margin-left: 410px;
+    width: 130px;
     border-radius: 7px;   
 }
 .download:hover{
@@ -133,7 +134,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.estrela{          
+.estrela{  
+    width: 100px;        
     margin-left: 50px;
     border-radius: 7px;
 }
@@ -143,6 +145,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 .editar{
+    width: 80px;
     margin-left: 50px;
     border-radius: 7px;
     
