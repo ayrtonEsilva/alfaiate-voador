@@ -85,9 +85,13 @@
             
             if (!numero || !email || !Nome){
                 alert("Todos os campos são obrigatórios")
+                const button = document.getElementById("botao")
+                button.style.display = "none";
                 const link = document.getElementById("inicio")
                 link.style.display = "none";
             }else {
+                const button = document.getElementById("botao")
+                button.style.display = "block";
                 const link = document.getElementById("inicio")
                 link.style.display = "block";
             }
@@ -148,7 +152,7 @@
 
                     <div class="col-6">
                         <label for="exampleInputEmail1" class="form-label" >Numero:</label>
-                        <input onchange="validar()" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
+                        <input  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required >
                    </div>
                 </div>
             </div>
@@ -161,7 +165,7 @@
                         <input name="cidade" type="text" class="form-control" id="cidade" size="40">
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-3">
                         <label for="sexo">Sexo:</label>
                         <div class="form-check" style="margin-top:px;">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
@@ -176,6 +180,9 @@
                             </label>
                           </div>
                     </div>
+                    <div class="col-3">
+                        <button onclick="validar()" type="button" class="btn btn-primary" id="boto"  style="margin-top: 40px; margin-left: -200px; display: block;">Enviar</button>
+                    </div>
                 </div>
             </div>
 
@@ -187,9 +194,10 @@
                         <input name="uf" type="text" class="form-control" id="uf" size="2" >
                     </div>
 
-                    <div class="col-6" id="botao">
-                        <button type="" class="btn btn-primary" id="botao"  style="margin-top: 30px; margin-left: 560px;"><a href="inicio.html" id="inicio" style="color: white; display: none;">Enviar</a></button>
+                    <div class="col-6" id="bota">
+                        <button type="" class="btn btn-primary" id="botao"  style="margin-top: 35px; display: none;"><a href="inicio.html" id="inicio" style="color: white; display: none;">Entrar no site</a></button>
                     </div>
+                    
                     
                 </div>
             </div>
